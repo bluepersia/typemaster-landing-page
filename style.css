@@ -1,0 +1,78 @@
+
+:root 
+{
+    --color-orange: hsl(22, 89%, 55%);
+    --color-lightorange: hsl(22, 100%, 69%);
+    --color-darkgrey: hsl(220, 50%, 17%);
+    --color-grey: hsl(221, 23%, 58%);
+    --color-lightgrey: hsl(198, 28%, 93%);
+    --color-white: hsl(0,0%,100%);
+}
+
+body {
+    font-family:  "Barlow", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+p {
+    line-height: 1.625;
+    font-weight: 500;
+    color: var(--color-grey)
+}
+
+.heading-1 {
+    font-size: 3rem;
+    line-height: 1;
+    color: var(--color-darkgrey);
+}
+.heading-2 
+{
+    font-size: 2rem;
+    line-height: 1.125;
+    color: var(--color-darkgrey);
+}
+
+.heading-3 
+{
+    font-size: 1.5rem;
+    line-height: 1.16;
+    color: var(--color-darkgrey);
+}
+
+
+
+.btn 
+{
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: .68em 0.875em;
+    border: none;
+    border-radius: 8px;
+    transition: all 300ms;
+}
+
+.btn--grey
+{
+    background-color: var(--color-lightgrey);
+    color: var(--color-darkgrey);
+}
+
+.btn--grey:hover
+{
+    background-color: var(--color-darkgrey);
+    color: var(--color-white);
+}
+
+.btn--orange 
+{
+    background-color: var(--color-orange);
+    color: var(--color-white);
+}
+
+.btn--orange:hover {
+    background-color: var(--color-lightorange);
+}
