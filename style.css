@@ -28,12 +28,14 @@ p {
     font-size: 3rem;
     line-height: 1;
     color: var(--color-darkgrey);
+    text-transform: uppercase;
 }
 .heading-2 
 {
     font-size: 2rem;
     line-height: 1.125;
     color: var(--color-darkgrey);
+    text-transform: uppercase;
 }
 
 .heading-3 
@@ -41,6 +43,7 @@ p {
     font-size: 1.5rem;
     line-height: 1.16;
     color: var(--color-darkgrey);
+    text-transform: uppercase;
 }
 
 
