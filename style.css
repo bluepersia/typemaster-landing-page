@@ -11,6 +11,7 @@
 
 body {
     font-family:  "Barlow", sans-serif;
+    overflow-x: hidden;
 }
 
 * {
@@ -79,4 +80,147 @@ p {
 
 .btn--orange:hover {
     background-color: var(--color-lightorange);
+}
+
+
+
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;;
+    padding: 1.43em 6.4% 0;
+    margin-bottom: 4em;
+}
+
+.hero {
+    margin-bottom: 1.5em;
+}
+.hero_content 
+{
+    padding: 0 6.4%;
+    margin-bottom: 4em;
+}
+
+.title {
+    margin-bottom: .66em;
+}
+
+.hero_body {
+    margin-bottom: 2em;
+}
+
+
+.hero_btns 
+{
+    display: flex;
+    align-items: center;
+    gap:2.31em;
+}
+
+.hero_btns_release 
+{
+    text-transform: uppercase;
+}
+
+.hero_img--desktop, .hero_img--tablet
+{
+    display: none;
+}
+
+.hero_img--mobile {
+    display: block;
+    width: 99.2%;
+    position: relative;
+    left: 6.4%;
+}
+
+.section-1
+{
+    margin-bottom:6.9em;
+}
+
+
+.section-1_imgs 
+{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 4.68em;
+}
+
+.section-1_img-1--tablet, .section-1_img-1--desktop 
+{
+    display: none;
+}
+
+.section-1_img-1--mobile 
+{
+    display: block;
+    width: 34.4%;
+    height: 193px;
+    position: relative;
+    left:-6.4%;
+    border-radius: 16px;
+    background-image: url(./assets/mobile/image-phone-and-keyboard.jpg);
+    background-color: var(--color-orange);
+    background-blend-mode: multiply;
+}
+
+.section-1_img-2--tablet, .section-1_img-2--desktop 
+{
+    display: none;
+}
+.section-1_img-2--mobile 
+{
+    display: block;
+    width: 58.6%;
+    border-radius: 16px;
+}
+
+
+.section-1_content 
+{
+    text-align: center;
+    padding: 0 6.4%;
+}
+
+.section-1_title 
+{
+    margin-bottom: .75em;
+}
+
+.features {
+    text-align: center;
+    padding: 0 6.4%;
+    margin-bottom: 6em;
+}
+
+.feature {
+    margin-bottom: 4em;
+}
+.feature_icon--wrapper 
+{
+    width: 4em;
+    height: 4em;
+    background-color: var(--color-orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+}
+
+.feature_title 
+{
+    margin-bottom: 1em;
+}
+
+
+.footer {
+    text-align: center;
+    padding: 0 6.4% 3.1em;
 }
