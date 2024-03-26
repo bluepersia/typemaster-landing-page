@@ -58,6 +58,7 @@ p {
     border-radius: 8px;
     transition: all 300ms;
     cursor: pointer;
+    font-size: inherit;
 }
 
 .btn--grey
@@ -223,4 +224,96 @@ p {
 .footer {
     text-align: center;
     padding: 0 6.4% 3.1em;
+}
+
+
+@media (min-width: 768px)
+{
+    .header {
+        padding: 2.5em 5% 0;
+    }
+
+
+    .hero {
+        display: flex;
+        align-items: center;
+        margin-bottom: 4.5em;
+    }
+    .hero_content {
+        margin-bottom: 0;
+        width: 53%;
+        padding: 3.75em 0 3.75em 5%;
+    }
+
+    .hero_img--mobile {
+        display: none;
+    }
+
+    .hero_img--tablet {
+        display:block;
+        position: relative;
+        right: -15%;
+        width: 54%;
+    }
+
+
+    .section-1 {
+        padding: 0 5%;
+        margin-bottom: 8.875em;
+    }
+
+    .section-1_imgs {
+        gap: 1.875em;
+        margin-bottom: 4.5em;
+    }
+
+    .section-1_img-1--mobile, .section-1_img-2--mobile {
+        display: none;
+    }
+
+    .section-1_img-1--tablet, .section-1_img-2--tablet {
+        display: block;
+        border-radius: 12px;
+    }
+
+    .section-1_img-1--tablet {
+        width: 31%;
+        height: 320px;
+        position: relative;
+        background-image: url(./assets/tablet/image-phone-and-keyboard.jpg);
+        background-color: var(--color-orange);
+        background-blend-mode: multiply;
+        background-size: cover;
+    }
+    .section-1_img-2--tablet {
+        width: 64.5%;
+        height: 320px;
+    }
+
+    .section-1_content {
+        padding: 0;
+        text-align: left;
+        display: flex;
+        gap: 5%;
+    }
+
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: left;
+        gap: 5%;
+        padding: 0 5%;
+        margin-bottom: 8.875em;
+    }
+    .feature {
+        flex: 1 1 300px;
+    }
+    .feature_icon--wrapper {
+        margin-left: 0;
+    }
+
+    .footer{
+        padding: 0 5% 2.625em;
+    }
+
 }
