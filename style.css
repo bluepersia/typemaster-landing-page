@@ -14,6 +14,9 @@ body {
     overflow-x: hidden;
 }
 
+img {
+    object-fit: cover;
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -288,6 +291,7 @@ p {
     .section-1_img-2--tablet {
         width: 64.5%;
         height: 320px;
+        object-fit: cover;
     }
 
     .section-1_content {
@@ -304,9 +308,12 @@ p {
         gap: 5%;
         padding: 0 5%;
         margin-bottom: 8.875em;
+        row-gap: 4.5em;
     }
     .feature {
         flex: 1 1 300px;
+        max-width: 340px;
+        margin-bottom: 0;
     }
     .feature_icon--wrapper {
         margin-left: 0;
@@ -316,4 +323,120 @@ p {
         padding: 0 5% 2.625em;
     }
 
+}
+
+
+@media (min-width:1440px)
+{
+    .heading-1 
+    {
+        font-size: 3.5rem;
+    }
+
+    .heading-2 
+    {
+        font-size: 2rem;
+    }
+    .heading-3 
+    {
+        font-size: 1.5rem;
+    }
+    .header 
+    {
+        padding: 3.43em 11.4%;
+        margin-bottom: 5.18em;
+    }
+
+    .hero{
+        margin-bottom: 1.875em;
+    }
+
+    .hero_content 
+    {
+        padding: 3.75em 0 6.75em 11.4%;
+        min-width: min-content;
+        width: 31.8%;
+    }
+
+    .hero_img--tablet{ 
+        display: none;
+    }
+    .hero_img--desktop {
+        display: block;
+        width: 38.7%;
+        margin-left: 8.9%;
+    }
+    .hero_grey {
+        align-self: flex-start;
+        border-radius: 16px;
+        height: 240px;
+        width: 18.2%;
+        transform: translateX(50%);
+        background-color: var(--color-lightgrey);
+    }
+
+    .section-1{
+        display: flex;
+        justify-content: start;
+        padding: 0 11.4%;
+        position: relative;
+        margin-bottom: 10.5em;
+    }
+
+.section-1_grey 
+{
+    position: absolute;
+    width: 18%;
+    height: 236px;
+    left: 0px;
+    background-color: var(--color-lightgrey);
+    align-self: flex-end;
+    border-radius: 16px;
+    transform: translateX(-50%);
+}
+
+    .section-1_imgs {
+        width: 65.7%;
+        margin-right: 8.9%;
+        margin-bottom: 0;
+    }
+
+    .section-1_img-1--tablet, .section-1_img-2--tablet {
+        display: none;
+    }
+
+    .section-1_img-1--desktop, .section-1_img-2--desktop {
+        display: block;
+        border-radius: 16px;
+    }
+
+    .section-1_img-1--desktop {
+        width: 34.9%;
+        height: 480px;
+        background-image: url(./assets/desktop/image-phone-and-keyboard.jpg);
+        background-size: cover;
+        background-color: var(--color-orange);
+        background-blend-mode: multiply;
+    }
+
+    .section-1_img-2--desktop {
+        width: 60%;
+        height: 480px;
+    }
+
+    .section-1_content {
+        display: block;
+        width: 22.9%;
+        margin-bottom: 0;
+        padding: 7em 0 6.43em;
+    }
+
+    .features {
+        margin-bottom: 8em;
+    }
+
+
+    .footer {
+        padding: 0 11.4% 2.43em;
+    }
 }
